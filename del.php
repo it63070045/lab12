@@ -1,7 +1,7 @@
 
 <?php
-	$conn = mysqli_connect('putthimafah.mysql.database.azure.com', 'putthima@putthimafah', 'fhpthms954*', 'itflab');
-	$sql = 'DELETE FROM guestbook WHERE id = '.$_GET['id'].'';
+	$conn = mysqli_connect('natanon.mysql.database.azure.com', 'NATANON@natanon', 'gG6tbrvqmn', 'itflab', 3306);
+	$sql = 'DELETE FROM guestbook WHERE ID = '.$_GET['id'].'';
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,7 +12,7 @@
                                 echo "Deleted"
 								?>
 							<script>
-			   window.location.replace("show.php");
+			   window.location.replace("index.php");
 		   </script>
 							<?php
 							}
